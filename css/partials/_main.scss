@@ -1,0 +1,123 @@
+//
+// Main
+//
+
+html {
+  background-color: $background-color;
+}
+
+.flower-nav {
+  position: fixed;
+  z-index: 1;
+  top: 15px;
+  left: 15px;
+}
+
+.flower-nav__leaf {
+  &:hover {
+    path {
+      fill: $yellow;
+    }
+
+    .flower-nav__leaf--top__title {
+      display: block;
+    }
+  }
+}
+
+.flower-nav__leaf__title {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 100px;
+  width: 80px;
+  text-align: center;
+  z-index: 1;
+
+  &.active {
+    display: inline-block;
+  }
+}
+
+.flower-nav__leaf__title--top {
+  transform: rotate(-90deg);
+}
+
+.flower-nav__leaf__title--top-right {
+  transform: rotate(-45deg);
+}
+
+.flower-nav__leaf__title--bottom-right {
+  transform: rotate(45deg);
+}
+
+.flower-nav__leaf__title--bottom-left {
+  transform: rotate(-45deg);
+}
+
+.flower-nav__leaf__title--top-left {
+  transform: rotate(45deg);
+}
+
+.wildflowers-logo {
+  position: relative;
+  left: 50%;
+  top: 15px;
+  transform: translate(-50%, 0);
+  margin-bottom: 50px;
+}
+
+.parallax-viewport {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  bottom: 72px;
+}
+
+.parallax-layer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  img {
+    width: 130%;
+    transform: translate(-15%, 0);
+    max-width: none;
+  }
+}
+
+.garden-navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 72px;
+  background-color: $background-color;
+  z-index: 1;
+}
+
+.garden-navigation__title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translate(0, -50%);
+  text-align: center;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.arrow-left {
+  left: 15px;;
+}
+
+.arrow-right {
+ right: 15px;;
+}
