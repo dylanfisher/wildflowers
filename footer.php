@@ -1,8 +1,6 @@
-  <div class="garden-navigation">
-    <?php include 'images/ui/arrow-left.svg'; ?>
-    <div class="garden-navigation__title">Garden as though you will live forever.</div>
-    <?php include 'images/ui/arrow-right.svg'; ?>
-  </div>
+  <?php if ( $_SERVER['REQUEST_URI'] == '/' || preg_match( '/^\/garden\d/', $_SERVER['REQUEST_URI'] ) ): ?>
+    <?php include 'garden_navigation.php'; ?>
+  <?php endif; ?>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/lib/jquery-1.11.2.min.js"><\/script>')</script>

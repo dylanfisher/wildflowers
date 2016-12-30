@@ -12,4 +12,6 @@
   <div class="parallax-layer parallax-layer--9"><img src="images/garden3/9.svg"></div>
 </div>
 
+<?php $garden_title = 'Daffodils and lilacs'; ?>
+
 <?php include 'footer.php'; ?>

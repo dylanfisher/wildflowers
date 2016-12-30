@@ -12,7 +12,7 @@ button,
 input,
 select,
 textarea {
-  color: #000;
+  color: $black;
 }
 
 ::selection {
@@ -29,7 +29,8 @@ hr {
   padding: 0;
 }
 
-img {
+img,
+svg {
   vertical-align: middle;
   max-width: 100%;
   height: auto;

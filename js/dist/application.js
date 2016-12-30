@@ -90,7 +90,7 @@ $(function() {
 
   function parallax(e, target, layer) {
     var layerCoeffX = ( App.windowWidth / 19 ) / layer;
-    var layerCoeffY = ( App.windowHeight / 23 ) / layer;
+    var layerCoeffY = ( App.windowHeight / 26 ) / layer;
     var x = ( $(window).width() - target.offsetWidth) / 2 - (e.pageX - ($(window).width() / 2) ) / layerCoeffX;
     var y = ( $(window).height() - target.offsetHeight) / 2 - (e.pageY - ($(window).height() / 2) ) / layerCoeffY;
 

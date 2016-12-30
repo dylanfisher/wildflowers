@@ -1,3 +1,20 @@
 //
 // Links
 //
+
+a {
+  text-decoration: none;
+  color: $red;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+.blank-link {
+  color: $black !important;
+
+  &:hover {
+    color: inherit !important;
+  }
+}

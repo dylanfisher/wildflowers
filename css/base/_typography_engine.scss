@@ -3,7 +3,8 @@
 ///////////////////////////////////////////////////
 
 // Font stacks
-$font-stack__regular : sans-serif;
+$font-stack__regular : 'MaisonNeueWEB-Demi', sans-serif;
+$font-stack__title : 'SerifGothicStd-ExtraBold', sans-serif;
 
 ///////////////////////////////////////////////////
 // Typography definitions
@@ -12,7 +13,15 @@ $font-stack__regular : sans-serif;
 // Regular
 @mixin font--regular {
   font-family: $font-stack__regular;
-  font-size:      1.8rem;
-  line-height:    2.1rem;
-  letter-spacing: 0.025rem;
+  font-size:      24px;
+  line-height:    1.5;
+  letter-spacing: 0;
+}
+
+@mixin font--title {
+  font-family: $font-stack__title;
+  font-size:      24px;
+  line-height:    1.5;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
