@@ -10,9 +10,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a href="/">
-    <?php include 'images/ui/wildflowers-logo.svg'; ?>
-  </a>
+  <div class="wildflowers-logo-wrapper">
+    <a href="/">
+      <?php include 'images/ui/wildflowers-logo.svg'; ?>
+    </a>
+  </div>
   <nav>
     <?php include 'images/ui/flower-nav.svg'; ?>
     <span class="flower-nav__leaf__title flower-nav__leaf__title--top <?php echo preg_match( '/^\/info/', $_SERVER['REQUEST_URI'] ) ? 'active initial-active' : ''; ?>" data-orientation="top">Info</span>
