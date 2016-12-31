@@ -10,8 +10,8 @@
           </div>
           <div class="col-sm-6">
             <div class="title">Garden 3</div>
-            <blockquote>Garden as though you will live forever.</blockquote>
-            William Kent
+            <blockquote>I am good at only two things, and those are gardening and painting.</blockquote>
+            Claude Monet
           </div>
         </div>
       </div>

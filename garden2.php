@@ -11,6 +11,6 @@
   <div class="parallax-layer parallax-layer--8"><img src="images/garden2/8.svg"></div>
 </div>
 
-<?php $garden_title = 'A rose is a rose is a rose'; ?>
+<?php $garden_title = 'A rose is a rose is a rose.'; ?>
 
 <?php include 'footer.php'; ?>

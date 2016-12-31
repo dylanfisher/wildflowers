@@ -11,6 +11,6 @@
   <div class="parallax-layer parallax-layer--8"><img src="images/garden1/8.svg"></div>
 </div>
 
-<?php $garden_title = 'Garden as though you will live forever'; ?>
+<?php $garden_title = 'Garden as though you will live forever.'; ?>
 
 <?php include 'footer.php'; ?>
