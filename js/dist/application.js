@@ -58,20 +58,29 @@ $(document).on('mouseenter', '.flower-nav__leaf', function() {
   var orientation = $leaf.attr('data-orientation');
   var $leafTitles = $('.flower-nav__leaf__title');
   var $leafTitle = $('.flower-nav__leaf__title[data-orientation="' + orientation + '"]');
-  var $initialActive = $leafTitles.closest('.active');
-  console.log($initialActive);
+  var $initialActive = $leafTitles.closest('.initial-active');
 
-  $initialActive.attr('data-initialActive', true);
   $leafTitles.removeClass('active');
   $leafTitle.addClass('active');
 });
 
 $(document).on('mouseleave', '.flower-nav__leaf', function() {
   var $leafTitles = $('.flower-nav__leaf__title');
-  var $initialActive = $leafTitles.closest('[data-initialActive="true"]');
+  var $initialActive = $leafTitles.closest('.initial-active');
 
   $leafTitles.removeClass('active');
   $initialActive.addClass('active');
+});
+
+// Fix a problem where some browsers don't like anchors inside svg elements
+$(document).on('click', '.flower-nav__leaf a', function(e) {
+  var url = $(this).attr('href');
+
+  if ( e.ctrlKey || e.shiftKey || e.metaKey || ( e.button && e.button == 1 ) ) {
+    window.open( url );
+  } else {
+    window.location = url;
+  }
 });
 
 $(function() {
@@ -79,10 +88,6 @@ $(function() {
   var $layers = $viewport.find('.parallax-layer');
 
   $(document).on('mousemove', function(e) {
-    var offsetX = e.offsetX;
-    var offsetY = e.offsetY;
-    $layers.css({ bottom: 'auto' });
-
     $layers.each(function(index) {
       parallax(e, this, index + 1);
     });
@@ -91,9 +96,9 @@ $(function() {
   function parallax(e, target, layer) {
     var layerCoeffX = ( App.windowWidth / 19 ) / layer;
     var layerCoeffY = ( App.windowHeight / 26 ) / layer;
-    var x = ( $(window).width() - target.offsetWidth) / 2 - (e.pageX - ($(window).width() / 2) ) / layerCoeffX;
-    var y = ( $(window).height() - target.offsetHeight) / 2 - (e.pageY - ($(window).height() / 2) ) / layerCoeffY;
+    var x = ( App.windowWidth - target.offsetWidth) / 2 - (e.pageX - (App.windowWidth / 2) ) / layerCoeffX;
+    var y = ( App.windowHeight - target.offsetHeight) / 2 - (e.pageY - (App.windowHeight / 2) ) / layerCoeffY;
 
-    $(target).offset({ top: y, left : x });
+    $(target).css({ transform: 'translate(' + x + 'px, ' + y + 'px)' });
   }
 });

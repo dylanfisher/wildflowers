@@ -15,9 +15,9 @@
   </a>
   <nav>
     <?php include 'images/ui/flower-nav.svg'; ?>
-    <span class="flower-nav__leaf__title flower-nav__leaf__title--top <?php echo preg_match( '/^\/info/', $_SERVER['REQUEST_URI'] ) ? 'active' : ''; ?>" data-orientation="top">Info</span>
-    <span class="flower-nav__leaf__title flower-nav__leaf__title--top-left <?php echo preg_match( '/^\/purchase/', $_SERVER['REQUEST_URI'] ) ? 'active' : ''; ?>" data-orientation="top-left">Purchase</span>
-    <span class="flower-nav__leaf__title flower-nav__leaf__title--top-right <?php echo preg_match( '/^\/archive/', $_SERVER['REQUEST_URI'] ) ? 'active' : ''; ?>" data-orientation="top-right">Archive</span>
-    <span class="flower-nav__leaf__title flower-nav__leaf__title--bottom-left <?php echo preg_match( '/^\/colophon/', $_SERVER['REQUEST_URI'] ) ? 'active' : ''; ?>" data-orientation="bottom-left">Colophon</span>
-    <span class="flower-nav__leaf__title flower-nav__leaf__title--bottom-right <?php echo preg_match( '/^\/submit/', $_SERVER['REQUEST_URI'] ) ? 'active' : ''; ?>" data-orientation="bottom-right">Submit</span>
+    <span class="flower-nav__leaf__title flower-nav__leaf__title--top <?php echo preg_match( '/^\/info/', $_SERVER['REQUEST_URI'] ) ? 'active initial-active' : ''; ?>" data-orientation="top">Info</span>
+    <span class="flower-nav__leaf__title flower-nav__leaf__title--top-left <?php echo preg_match( '/^\/purchase/', $_SERVER['REQUEST_URI'] ) ? 'active initial-active' : ''; ?>" data-orientation="top-left">Purchase</span>
+    <span class="flower-nav__leaf__title flower-nav__leaf__title--top-right <?php echo preg_match( '/^\/archive/', $_SERVER['REQUEST_URI'] ) ? 'active initial-active' : ''; ?>" data-orientation="top-right">Archive</span>
+    <span class="flower-nav__leaf__title flower-nav__leaf__title--bottom-left <?php echo preg_match( '/^\/colophon/', $_SERVER['REQUEST_URI'] ) ? 'active initial-active' : ''; ?>" data-orientation="bottom-left">Colophon</span>
+    <span class="flower-nav__leaf__title flower-nav__leaf__title--bottom-right <?php echo preg_match( '/^\/submit/', $_SERVER['REQUEST_URI'] ) ? 'active initial-active' : ''; ?>" data-orientation="bottom-right">Submit</span>
   </nav>
