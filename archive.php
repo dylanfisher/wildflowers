@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
   <div class="row">
-    <a href="garden3.php" class="garden-item-row blank-link">
+    <a href="garden3" class="garden-item-row blank-link">
       <div class="col-sm-10 col-sm-offset-1">
         <div class="row">
           <div class="col-sm-6 ta-center">
@@ -17,7 +17,7 @@
       </div>
     </a>
 
-    <a href="garden2.php" class="garden-item-row blank-link">
+    <a href="garden2" class="garden-item-row blank-link">
       <div class="col-sm-10 col-sm-offset-1">
         <div class="row">
           <div class="col-sm-6 ta-center">
@@ -32,7 +32,7 @@
       </div>
     </a>
 
-    <a href="garden1.php" class="garden-item-row blank-link">
+    <a href="garden1" class="garden-item-row blank-link">
       <div class="col-sm-10 col-sm-offset-1">
         <div class="row">
           <div class="col-sm-6 ta-center">
