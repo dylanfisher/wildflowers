@@ -60,6 +60,10 @@ $(document).on('mouseenter', '.flower-nav__leaf', function() {
   var $leafTitle = $('.flower-nav__leaf__title[data-orientation="' + orientation + '"]');
   var $initialActive = $leafTitles.closest('.initial-active');
 
+  var chime = new Audio('audio/chime.wav');
+  chime.volume = 0.5;
+  chime.play();
+
   $leafTitles.removeClass('active');
   $leafTitle.addClass('active');
 });
