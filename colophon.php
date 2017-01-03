@@ -13,7 +13,7 @@
       </p>
       <p>
         <span class="title">TYPOGRAPHY</span><br>
-        Maison Neue Light<br>
+        Maison Neue Demi<br>
         ITC Serif Gothic
       </p>
     </div>
