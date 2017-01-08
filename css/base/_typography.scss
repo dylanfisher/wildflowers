@@ -33,16 +33,24 @@ blockquote {
 
   &:before,
   &:after {
-    position: absolute;
+    @include breakpoint(sm) {
+      position: absolute;
+    }
   }
 
   &:before {
     content: open-quote;
-    margin-left: -0.65em;
+
+    @include breakpoint(sm) {
+      margin-left: -0.65em;
+    }
   }
 
   &:after {
     content: close-quote;
-    margin-left: 0.1em;
+
+    @include breakpoint(sm) {
+      margin-left: 0.1em;
+    }
   }
 }

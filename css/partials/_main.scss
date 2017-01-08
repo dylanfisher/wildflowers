@@ -10,7 +10,13 @@ html {
   position: fixed;
   z-index: 1;
   top: 15px;
-  left: 15px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  @include breakpoint(sm) {
+    left: 15px;
+    transform: none;
+  }
 }
 
 .flower-nav__leaf {
@@ -41,6 +47,11 @@ html {
   &.active {
     display: inline-block;
   }
+
+  @include breakpoint(xs) {
+    left: auto;
+    right: 0;
+  }
 }
 
 .flower-nav__leaf__title--top {
@@ -64,10 +75,23 @@ html {
 }
 
 .wildflowers-logo-wrapper {
-  text-align: center;
   margin-top: 15px;
   margin-bottom: 2em;
   padding-bottom: 11px;
+  text-align: center;
+
+  @include breakpoint(xs) {
+    opacity: 0;
+
+    .home & {
+      opacity: 1;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translate(0, calc(-50%));
+      margin-top: -36px;
+    }
+  }
 }
 
 .parallax-viewport {
@@ -105,13 +129,17 @@ html {
 }
 
 .garden-navigation__title {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  transform: translate(0, -50%);
   text-align: center;
-  padding: 0 100px;
+  padding: 0 60px;
+
+  @include breakpoint(sm) {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translate(0, -50%);
+    padding: 0 100px;
+  }
 }
 
 .arrow {
@@ -141,5 +169,11 @@ html {
 
   &:hover {
     background: $light-yellow;
+  }
+
+  @include breakpoint(xs) {
+    svg {
+      width: 100%;
+    }
   }
 }
