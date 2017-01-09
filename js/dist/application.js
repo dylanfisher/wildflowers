@@ -77,7 +77,7 @@ $(document).on('mouseleave', '.flower-nav__leaf', function() {
 });
 
 // Fix a problem where some browsers don't like anchors inside svg elements
-$(document).on('click', '.flower-nav__leaf a', function(e) {
+$(document).on('click touchstart', '.flower-nav__leaf a', function(e) {
   var url = $(this).attr('href');
 
   if ( e.ctrlKey || e.shiftKey || e.metaKey || ( e.button && e.button == 1 ) ) {
