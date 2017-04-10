@@ -2,6 +2,36 @@
 
 <div class="container-fluid">
   <div class="row">
+  <a href="garden5" class="garden-item-row blank-link">
+      <div class="col-sm-10 col-sm-offset-1">
+        <div class="row">
+          <div class="col-sm-6 ta-center">
+            <?php include 'images/ui/black-garden5.svg'; ?>
+          </div>
+          <div class="col-sm-6">
+            <div class="title">Garden 5</div>
+            <blockquote>I would like to paint the way a bird sings.</blockquote>
+            Claude Monet
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="garden4" class="garden-item-row blank-link">
+      <div class="col-sm-10 col-sm-offset-1">
+        <div class="row">
+          <div class="col-sm-6 ta-center">
+            <?php include 'images/ui/black-garden4.svg'; ?>
+          </div>
+          <div class="col-sm-6">
+            <div class="title">Garden 4</div>
+            <blockquote>In joy or sadness flowers are our constant friends.</blockquote>
+            Kakuzō Okakura, The Book Of Tea
+          </div>
+        </div>
+      </div>
+    </a>
+
     <a href="garden3" class="garden-item-row blank-link">
       <div class="col-sm-10 col-sm-offset-1">
         <div class="row">
