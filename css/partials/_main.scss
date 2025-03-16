@@ -180,3 +180,13 @@ html {
     }
   }
 }
+
+::-moz-selection { /* Code for Firefox */
+  color: $background-color !important;
+  background: #ED6557 !important;
+}
+
+::selection {
+  color: $background-color !important;
+  background: #ED6557 !important;
+}
